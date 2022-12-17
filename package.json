@@ -1,9 +1,12 @@
 {
   "name": "reactmorty",
+  "homepage": "http://ReinelRueda.github.io/ReactMorty",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prediploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,6 +14,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
