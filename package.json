@@ -1,6 +1,6 @@
 {
   "name": "reactmorty",
-  "homepage": "http://ReinelRueda.github.io/ReactMorty",
+  "homepage": "https://github.com/ReinelRueda/ReactMorty.github.id",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "prediploy":"npm run build",
     "deploy":"gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/ReactMorty.github.id/",
     "preview": "vite preview"
   },
   "dependencies": {
