@@ -17,12 +17,20 @@ function ConexionApi() {
     const data = await respuesta.json();
     setPersonajes(data.results);
   }
+  const paginaAnterior = ()=>{
+    if(pagina<=1){
+      setPagina(pagina = 1)
+    }else{
+      setPagina(pagina - 1)
+    }
+  }
+ 
 
   console.log(personajes);
   return (
     <div className="alert alert-primary" role="alert">
       <h1> Pagina {pagina}</h1>
-      <button onClick={() => setPagina(pagina - 1)}>Anterior</button>
+      <button  onClick={() => paginaAnterior()}>Anterior</button>
 
       <button onClick={() => setPagina(pagina + 1)}>Siguiente</button>
 
