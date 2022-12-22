@@ -6,10 +6,10 @@ body {
 }
 .parent {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 1 rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  gap: 30px;
   }
   
 li {
